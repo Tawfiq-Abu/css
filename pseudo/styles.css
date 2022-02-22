@@ -1,0 +1,46 @@
+.submit:hover{
+    background-color:hotpink;
+}
+.submit:active{
+    background-color:cyan;
+}
+.submit:focus{
+    background-color:orangered;
+}
+.name:hover{
+    background-color:orchid;
+    border-color:orangered;
+
+}
+.name:focus{
+    border-bottom: 2px solid hotpink;
+    border-top: 0px solid white;
+    border-left: 0px solid white;
+    border-right:transparent;
+}
+
+span:first-child{
+    /* looks for a span that's a first child and styles it */
+    color:hotpink;
+}
+span:last-child{
+    color:orangered;
+}
+span:first-of-type{
+    /* get the first type of that element and styles it */
+    border:1px solid indigo;
+}
+   
+span:nth-child(2){
+    /* 
+    select the second span tag 
+    we can write formulas in it
+    eg the nth-child(even) would get all even numbers
+    
+    */
+    color:cyan;
+}
+::selection{
+    color:crimson;
+    background-color:yellow;
+}

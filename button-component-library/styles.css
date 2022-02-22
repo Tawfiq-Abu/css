@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+.btn{
+    background-color:hsl(0,0%,90%);
+    border:1px solid hsl(0,0%,70%);
+    outline:none;
+    cursor:pointer;
+    padding: .5em 1em;
+    border-radius: .3em;
+}
+.btn:hover,.btn:focus{
+    background-color: hsl(0,0%,80%);
+    /* 
+    first two numbers are defining our x and y offset so essentially we don't want to offset our buuton
+    second two numbers define how spread out and blurred out our shadow is going to be
+    then we define our color
+    */
+    box-shadow: 0 0 5px 0 hsl(0,0%,70%);
+}
+
+.btn-primary{
+    background-color:hsl(271,70%,50%);
+    color:whitesmoke;
+    border:1px solid hsl(271,70%,30%);
+}
+
+
+.btn.btn-primary:hover,.btn.btn-primary:focus{
+    background-color: hsl(271,70%,40%);
+    box-shadow: 0 0 5px 0 hsl(0,0%,30%);
+}
+
+.btn-accent{
+    background-color:hsl(200,100%,40%);
+    color:whitesmoke;
+    border:1px solid hsl(200,100%,20%);
+}
+
+
+.btn.btn-accent:hover,.btn.btn-accent:focus{
+    background-color: hsl(200,100%,30%);
+    box-shadow: 0 0 5px 0 hsl(200,100%,20%);
+}
