@@ -28,7 +28,7 @@
 
 .btn.btn-primary:hover,.btn.btn-primary:focus{
     background-color: hsl(271,70%,40%);
-    box-shadow: 0 0 5px 0 hsl(0,0%,30%);
+    box-shadow: 0 0 5px 0 hsl(271,70%,30%);
 }
 
 .btn-accent{
@@ -41,4 +41,27 @@
 .btn.btn-accent:hover,.btn.btn-accent:focus{
     background-color: hsl(200,100%,30%);
     box-shadow: 0 0 5px 0 hsl(200,100%,20%);
+}
+
+.btn-danger{
+    background-color:hsl(0,60%,50%);
+    color:whitesmoke;
+    border:1px solid hsl(0,60%,30%);
+}
+
+
+.btn.btn-danger:hover,.btn.btn-danger:focus{
+    background-color: hsl(0,60%,40%);
+    box-shadow: 0 0 5px 0 hsl(0,60%,30%);
+}
+
+.btn-large{
+    font-size:1.25rem;
+}
+.btn-small{
+    font-size:.75rem;
+}
+.btn-pill{
+    /* a trick is to use a large number of pixels to create a pefectly shaped edge */
+    border-radius: 10000000px;
 }
