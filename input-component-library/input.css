@@ -1,0 +1,46 @@
+.input{
+    width:14rem;
+    height:2.5rem;
+    font-size:1.2rem;
+    border-radius:4px;
+    border:1px solid black;
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+    outline:none;
+    padding:0.5rem;
+    
+}
+.input:focus{
+    border-color:hsl(195, 89%, 47%);
+    box-shadow:0 0 6px 0 hsl(195, 89%, 57%);
+}
+
+::placeholder{
+    color:black;
+}
+
+.input.success{
+    border-color:hsl(165, 100%, 48%);
+}
+.success:focus{
+    box-shadow: 0 0 6px 0 hsl(165, 100%, 38%);
+    border-color:rgb(0, 245, 184);
+    
+}
+.input.error{
+    border-color:hsl(0, 89%, 47%);
+}
+.error:focus{
+    box-shadow: 0 0 6px hsl(0, 89%, 37%);
+}
+.Large{
+    width:17rem;
+    height:3.5rem;
+}
+.small{
+    width:12rem;
+    height:1.5rem;
+}
+.disabled{
+    background-color:rgba(139, 134, 134, 0.253)
+}
