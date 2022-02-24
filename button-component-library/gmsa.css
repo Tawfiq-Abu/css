@@ -1,0 +1,23 @@
+.container{
+    display:flex;
+    background-color:#ccc;
+    border:1px solid black;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+    height: 400px;
+}
+.item{
+    border: 1px solid #222;
+    background-color:#777;
+    width:300px;
+    color:yellow;
+    margin:0
+}
+.first{
+    height:250px;
+}
+.second{
+    height:250px;
+}
