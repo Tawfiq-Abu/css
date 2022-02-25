@@ -1,0 +1,16 @@
+
+body{
+    margin:0;
+    font-family:Arial;
+    line-height:1.5;
+}
+
+.header{
+    background-color:rgb(24, 13, 227);
+    color:whitesmoke;
+    text-align: center;
+    padding:1.5rem;
+}
+.header-title{
+    margin:0;
+}
