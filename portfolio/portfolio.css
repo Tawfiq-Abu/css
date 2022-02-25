@@ -72,3 +72,11 @@ body{
     background-color:hsl(243, 89%, 37%);
     box-shadow: 0 0 5px 0 hsl(243, 89%, 27%);
 }
+
+footer{
+    background-color:rgb(24, 13, 227);
+    font-size: 1.25rem;
+    color:whitesmoke;
+    text-align: center;
+    padding:1.5rem;
+}
