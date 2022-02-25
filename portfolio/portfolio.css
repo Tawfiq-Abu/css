@@ -33,3 +33,42 @@ body{
     font-size: 1.2rem;
     font-style: italic;
 }
+.project-section{
+    list-style:none;
+    margin:0;
+    color:#777;
+}
+.contact-section{
+    margin:2rem 0;
+
+}
+.input{
+    border: 1px solid #AAA;
+    outline: none;
+    padding: 0.5em;
+    font-size:1rem;
+    border-radius: .2em;
+    font-family:inherit;
+    line-height:inherit;
+
+}
+.input:focus{
+    border-color: rgb(24, 13, 227);
+    box-shadow: 0 0 5px 0 rgb(24, 13, 227);
+}
+.textarea{
+    resize: none;
+}
+.btn{
+    background-color:hsl(243, 89%, 47%);
+    border:1px solid hsl(243, 89%, 27%);
+    border-radius:.3em;
+    cursor:pointer;
+    padding:.5em 1em;
+    outline:none;
+    color:whitesmoke;
+}
+.btn:focus,.btn:hover{
+    background-color:hsl(243, 89%, 37%);
+    box-shadow: 0 0 5px 0 hsl(243, 89%, 27%);
+}
