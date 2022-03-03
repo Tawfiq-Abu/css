@@ -14,22 +14,42 @@
             margin:10px;
         }
         .container{
-            display:flex;
+            display:flex /*inline-flex*/;
             background-color:#ccc;
             border:1px solid black;
-            justify-content:center;
-            align-items:center;
+            justify-content:center;/*this is for the horizontal crosss axis*/
+            /* strectch:takes height of the largest if items are set to min-heigt
+            flex-end-pushes items down 
+            flex-start :pushes items to the top */
+            align-items:center;/*this is for the vertical crosss axis*/
             flex-direction:row;
             flex-wrap:wrap;
+            /* Aligns flex items along the main axis of the current line of the flex container. 
+            flex-start to the begining and flex-end to the end*/
+            /* justify-content: flex-start; */
+            /* space-between:brings space in between items 
+            space-around:similar to space between but gives equal amount of space to the left and right*/
+            /* justify-content: space-around; */
         }
         .item1{
+            /* flex-grow,shrink,basis */
+            flex:1 0 auto;
             height:50px;
         }
         .item2{
             height:100px;
+            /* shares the remaining space with item 3 in ratio of 2:1 as specified */
+            /* flex-grow: 1;
+            /* to make item 2 twice exactly as big as item 1 we use  */
+            /* flex-basis: 0;  */
+            /* flex-shrink when set to one doesn't shrink items */
+            flex-shrink: 2;
         }
         .item3{
             height:150px;
+            /* if we want item 3 to take the remaing space in the container */
+            /* flex-grow: 2;
+            flex-basis: 0; */
         }
     </style>
 
