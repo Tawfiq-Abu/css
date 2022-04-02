@@ -1,0 +1,56 @@
+.item{
+    border: 1px solid #222;
+    background-color:#777;
+    width:100px;
+    color:yellow;
+    margin:10px;
+}
+
+.container{
+    display:flex;
+    background-color:#CCC;
+    border:1px solid black;
+    justify-content:space-around;
+    align-items:center;
+}
+
+
+.item1{
+    height: 50px;
+}
+.item2{
+    height: 100px;
+}
+.item3{
+    height: 150px;
+}
+
+/* 
+1.flex box uses two dimensions
+    the main axes which is from left to right(horizontal)
+    cross axes is from top to bottom(vertical axes)
+
+
+2.justify content
+    this is used for the main axes
+    controls item to the left right and centre
+    by default it's has flex-start
+    we can use flex-end
+    we can use center to center align them
+    space-between brings spaces in between elements
+    space-around equal space around elements 
+
+
+3.align-items
+    modifies the cross axes
+    by default set to stretch == meaning elements would grow to fill entire space
+    thus if we were to set min height on our items they would grow to fill entire space
+    we can use flex-start === every element would be at the very top of the parent-element
+    we can use flex-end === every element would be at the very bottom of the parent element
+    we can use center === places them in the middle(something very difficult to do in css)
+    it doesn't have space between cause there's no item above or below them
+
+
+
+
+*/
