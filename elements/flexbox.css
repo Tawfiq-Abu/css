@@ -84,6 +84,14 @@
     you can give flex-grow to a number of child element
     in actual sense the number given to them would act as a ratio
 
+8.flex-basis
+    this works hand in hand with flex-grow
+    supposing out of the three boxes we gave item2 a flex-basis:0; and same for item3
+    this denotes that item one would take it's original size 75px
+    then item 2 and 3 share the remainder
+    during flex-grow it assumes the both boxes have a width of 0px
+    then the remaining space is shared between them in ratio of flex-grow
+
 
 
 
