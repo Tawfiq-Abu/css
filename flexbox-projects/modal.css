@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* this is to facilitate centering the divs using flex-box
+    by default the body takes as much height as the content */
+    height:100vh;
+    /* remove scroll bar from our body */
+    margin:0;
+    background-color:#555;
+}
+
+.modal{
+    /* this is because we want our modal to take up a certain percentage of our height
+    thus 80% of our entire screen size */
+    height:80vh;
+    /* hidden:to cut of our content to the specific size
+    auto:add a scroll bar */
+    /* overflow:auto; */
+    /* if our modal is too large it's going to take up 80% of the screen
+    but if we increase our screen size large enough we're going to get a modal that is 
+    eventually 900px of our screen
+    essentiall minimum 900px maximumum is 80% of our screen */
+    width:900px;
+    max-width:80%;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    display:flex;
+    flex-direction: column;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding:0 1rem;
+    padding-bottom:.5rem;
+    border-bottom:1px solid #777;
+}
+
+.title{
+    font-size:1.5rem;
+    padding-top: 1rem;
+}
+
+.close{
+    background:none;
+    border:none;
+    font-size:1.5rem;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    cursor:pointer;
+    align-self: center;
+}
+
+.body{
+    flex-grow:1;
+    overflow:auto;
+    padding: 1rem;
+}
+
+.footer{
+    display:flex;
+    justify-content:flex-end;
+    padding:.5rem;
+    border-top:1px solid #777;
+}
+.btn{
+    background-color:hsl(0,0%,90%);
+    border:1px solid hsl(0,0%,70%);
+    outline:none;
+    cursor:pointer;
+    padding: .5em 1em;
+    border-radius: .3em;
+    
+}
+
+.btn-primary{
+    background-color:hsl(271,70%,50%);
+    color:whitesmoke;
+    border:1px solid hsl(271,70%,30%);
+    margin-right: .5rem;
+}
+.btn.btn-primary:hover,.btn.btn-primary:focus{
+    background-color: hsl(271,70%,40%);
+    box-shadow: 0 0 5px 0 hsl(271,70%,30%);
+}
+
+.btn-danger{
+    background-color:hsl(0,60%,50%);
+    color:whitesmoke;
+    border:1px solid hsl(0,60%,30%);
+    margin-right: .5rem;
+
+}
+
+
+.btn.btn-danger:hover,.btn.btn-danger:focus{
+    background-color: hsl(0,60%,40%);
+    box-shadow: 0 0 5px 0 hsl(0,60%,30%);
+}
