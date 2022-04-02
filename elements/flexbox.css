@@ -51,6 +51,24 @@
     it doesn't have space between cause there's no item above or below them
 
 
+4.flex-wrap:wrap;
+    allow your items to move on to different lines when shrinking when you set it to wrap
+    if you don't have this property,element would just shrink in size
+
+
+5.align-content
+    helps to align a flex container's line within it when there's extra space in the cross-axis
+    similar to how justify-content aligns individual items within the main-axis.
+    this property has no effect when the flexbox has only a single line.
+    flex-start: lines packed to the start of the container
+    flex-end: lines packed to the end of the container
+    center: lines packed to the center of the container
+    space-between: lines evenly distributed; the first line is at the start of the container 
+    while the last one is at the end
+    space-around: lines evenly distributed with equal space between them
+    stretch (default): lines stretch to take up the remaining space
+
+
 
 
 */
