@@ -98,6 +98,11 @@
     if we give a flex-shrink of 0 items would not shrink
     the higher the number the faster they shrink
 
+10.flex property
+    given to child elements
+    allows one to define grow shrink and basis all on one line
+    flex: 1 0 0;
+
 
 
 
