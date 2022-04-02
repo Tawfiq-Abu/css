@@ -92,6 +92,12 @@
     during flex-grow it assumes the both boxes have a width of 0px
     then the remaining space is shared between them in ratio of flex-grow
 
+9.flex-shrink
+    by default all items have default shrink of 1
+    this is also given to child elements 
+    if we give a flex-shrink of 0 items would not shrink
+    the higher the number the faster they shrink
+
 
 
 
