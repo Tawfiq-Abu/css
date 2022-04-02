@@ -103,6 +103,11 @@
     allows one to define grow shrink and basis all on one line
     flex: 1 0 0;
 
+11.align-self
+    given to child elements
+    allow us to specify the axis of our child elements
+    when we give align-self:flex-start to box one, it moves to the very top of the box
+
 
 
 
