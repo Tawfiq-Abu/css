@@ -68,6 +68,15 @@
     space-around: lines evenly distributed with equal space between them
     stretch (default): lines stretch to take up the remaining space
 
+6.flex direction
+    by default it's row
+    column:
+    this reverses our main and cross axes
+    main axes is top to bottom
+    cross axes is left to right
+    justify content works now from top to bottom
+    align-content works from left to right
+
 
 
 
