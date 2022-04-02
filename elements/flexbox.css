@@ -77,6 +77,13 @@
     justify content works now from top to bottom
     align-content works from left to right
 
+7.flex-grow
+    this is given to the child element
+    you specify a number eg.flex-grow:1;
+    this makes the child element take the remaining space in parent element
+    you can give flex-grow to a number of child element
+    in actual sense the number given to them would act as a ratio
+
 
 
 
