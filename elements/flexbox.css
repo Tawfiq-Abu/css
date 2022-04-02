@@ -108,6 +108,12 @@
     allow us to specify the axis of our child elements
     when we give align-self:flex-start to box one, it moves to the very top of the box
 
+12.order
+    also given to child elements
+    specifies order of our flex-items
+    order:3 given to box 1 would make it the first item
+    highly recommended - dont use this property
+
 
 
 
