@@ -8,6 +8,7 @@
     display:grid;
     grid-template-columns:100px 50px ;
     grid-template-rows:100px 150px;
+    grid-auto-rows: 100px;
 }
 
 
@@ -30,6 +31,28 @@ grid
     grid rows take the first values
     then separated by a /
     then grid colums take the second values
+
+4.grid-auto-rows:40px;
+    this is used to denote the value of any row that we dont define
+    if we only gave values for say two rows and we have more 
+    it'll automatically take the value specified in this property
+    it's auto by default
+    we can give it multiple values 
+    say we had two values for it grid-auto-rows:40px 50px;
+    and six undefined rows
+    the first would take 40px second 50px and the third would come back to 40px in that order
+    it essentially cycles through them
+
+5.grid-auto-colums:50px;
+    essentially works like the grid-auto-rows
+    defines values for all extra colums
+    for this to work sometimes we need to set grid-auto-flow to column
+
+6.grid-auto-flow:row;
+    this denotes where new elements should be added when not specified in grid-template
+    that's grid-template-row/column
+    by default it's set to row
+
 
 
 */
