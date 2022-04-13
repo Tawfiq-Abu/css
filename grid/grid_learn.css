@@ -9,6 +9,21 @@
     grid-template-columns:100px 50px ;
     grid-template-rows:100px 150px;
     grid-auto-rows: 100px;
+    grid-template-areas: 
+        "header header"
+        "side content"
+        "footer footer"    
+    ;
+}
+.item1{
+    grid-area: header;
+}
+
+.item3{
+    grid-area: content;
+}
+.item2{
+    grid-area:footer;
 }
 
 
@@ -52,7 +67,33 @@ grid
     this denotes where new elements should be added when not specified in grid-template
     that's grid-template-row/column
     by default it's set to row
+7.grid-template-areas: 
+            "a a a"
+            "b c c"
+            "b c c";
 
+            say you have three items of a b and c
+            The grid-template-areas CSS property specifies named grid areas, establishing the cells in the grid and assigning them names.
+            so essentially what we've done is to give the first three colums to item a
+            first colum in second row to b and the rest c
+            and first colum in third row item b and the rest c
+            a would span over the first three columns
+            b would take a column and span over two rows
+            and c would span over two colums and two rows
+            this would work when the individual items are given a grid-area property 
+            value should be inside of quotes
 
+            grid-template-areas: 
+            "a a ."
+            "a a ."
+            ". b c";
+            the periods denote that after the value a has span over the two columns
+            there can be any item over there
+            without the periods the grid layouts can be messed up
+
+8.grid-area:value;
+    given to individual items in the grid
+    use names that has been specified in grid-template-area
+    value should not be inside of quotes
 
 */
