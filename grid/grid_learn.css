@@ -1,0 +1,35 @@
+.item{
+    border:1px solid #333;
+    background-color:#777;
+    color:yellow;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:100px 50px ;
+    grid-template-rows:100px 150px;
+}
+
+
+
+/* 
+grid
+    grid works like block level elements thus places items on top of the other
+    grid is two dimensional
+
+1.grid-template-columns:100px 200px etc.;
+    this is to denote the number of columns you want and the width of each column
+    if you were to give 6 values it would create colums of six for you
+    nb. columns are horizontal
+
+2. grid-template-rows:50px 100px;
+    this denotes how many row and the height of each row
+
+3. grid-template:100px 200px/100ox 80px;
+    this is a shorthand for denoting colums and rows
+    grid rows take the first values
+    then separated by a /
+    then grid colums take the second values
+
+
+*/
