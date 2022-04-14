@@ -96,4 +96,32 @@ grid
     use names that has been specified in grid-template-area
     value should not be inside of quotes
 
+9.grid-column-start:1;
+  grid-colum-end:3;
+  grid-row-start:1;
+  grid-row-end:3;
+    grid-column-start / grid-row-start is the line where the item begins, and grid-column-end / grid-row-end is the line where the item ends.
+    
+
+10. the fr properties in grid-template-columns
+    usage grid-template-columns: 1fr 2fr 1fr;
+    this means that first colums should take 1fraction of the total length and it continues it that format
+
+11.the repeat function 
+    if we wanted 4 equal columns in grid 
+    we'd have done  grid-template-columns: 1fr 1fr 1fr 1fr;
+    but with the repeate we just do grid-template-columns:repeat(4,1fr);
+    we can also do grid-template-columns: 50px repeat(2,100px) 50px;
+
+
+12.minmax function
+    say in our first box we had the content to be spilling out of the box
+    normally spills out of the row
+    so we can do grid-template-rows:minmax(50px,auto)
+    this means the minimum size should be 50px
+    maximum size should be auto meaning grow to contain your content
+    
+    
+    
+
 */
