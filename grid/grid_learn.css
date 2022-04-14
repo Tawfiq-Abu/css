@@ -32,6 +32,7 @@
 grid
     grid works like block level elements thus places items on top of the other
     grid is two dimensional
+    https://css-tricks.com/snippets/css/complete-guide-grid/
 
 1.grid-template-columns:100px 200px etc.;
     this is to denote the number of columns you want and the width of each column
@@ -120,7 +121,64 @@ grid
     so we can do grid-template-rows:minmax(50px,auto)
     this means the minimum size should be 50px
     maximum size should be auto meaning grow to contain your content
-    
+
+
+13.row-gap:10px
+column-gap:20px
+gap:15px
+    this essentially puts gaps between all rows if specified and columns if specified
+    the gap property puts the specified gaps between alll rows and columns
+
+14.justify-content
+
+    Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the inline (row) axis (as opposed to align-content which aligns the grid along the block (column) axis).
+
+    Values:
+
+    start – aligns the grid to be flush with the start edge of the grid container
+    end – aligns the grid to be flush with the end edge of the grid container
+    center – aligns the grid in the center of the grid container
+    stretch – resizes the grid items to allow the grid to fill the full width of the grid container
+    space-around – places an even amount of space between each grid item, with half-sized spaces on the far ends
+    space-between – places an even amount of space between each grid item, with no space at the far ends
+    space-evenly – places an even amount of space between each grid item, including the far ends
+
+
+15.align-content
+    Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the block (column) axis (as opposed to justify-content which aligns the grid along the inline (row) axis).
+    your grid needs to have a height before it'll work
+
+    Values:
+
+    start – aligns the grid to be flush with the start edge of the grid container
+    end – aligns the grid to be flush with the end edge of the grid container
+    center – aligns the grid in the center of the grid container
+    stretch – resizes the grid items to allow the grid to fill the full height of the grid container
+    space-around – places an even amount of space between each grid item, with half-sized spaces on the far ends
+    space-between – places an even amount of space between each grid item, with no space at the far ends
+    space-evenly – places an even amount of space between each grid item, including the far ends
+
+16.align-items
+
+    Aligns grid items along the block (column) axis (as opposed to justify-items which aligns along the inline (row) axis). This value applies to all grid items inside the container.
+
+    Values:
+
+    stretch – fills the whole height of the cell (this is the default)
+    start – aligns items to be flush with the start edge of their cell
+    end – aligns items to be flush with the end edge of their cell
+    center – aligns items in the center of their cell
+    baseline – align items along text baseline. There are modifiers to baseline — first baseline and last baseline which will use the baseline from the first or last line in the case of multi-line text.
+
+17.justify-items
+    Aligns grid items along the inline (row) axis (as opposed to align-items which aligns along the block (column) axis). This value applies to all grid items inside the container.
+
+    Values:
+
+    start – aligns items to be flush with the start edge of their cell
+    end – aligns items to be flush with the end edge of their cell
+    center – aligns items in the center of their cell
+    stretch – fills the whole width of the cell (this is the default)
     
     
 
