@@ -180,6 +180,7 @@ gap:15px
     center – aligns items in the center of their cell
     stretch – fills the whole width of the cell (this is the default)
     
-    
+ 18.align-self and justify-self
+    given to individual items in the flex container   
 
 */
