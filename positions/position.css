@@ -1,0 +1,48 @@
+.parent{
+    padding:.25rem;
+    background-color: lightskyblue;
+}
+.child1{
+    padding:.25rem;
+    position:absolute;
+    top: 10px;
+    bottom: 10px;
+    background-color: lightcoral;
+}
+.child2{
+    padding:.25rem;
+    background-color: lightgreen;
+}
+.child3{
+    padding:.25rem;
+    background-color: peru;
+}
+
+/* 
+https://css-tricks.com/almanac/properties/p/position/
+1.static
+    static: every element has a static position by default, so the element will stick to the normal page flow. So if there is a left/right/top/bottom/z-index set then there will be no effect on that element.
+
+2.relative
+    relative: an element’s original position remains in the flow of the document, just like the static value. But now left/right/top/bottom/z-index will work. The positional properties “nudge” the element from the original position in that direction.
+
+3.absolute
+    absolute: the element is removed from the flow of the document and other elements will behave as if it’s not even there whilst all the other positional properties will work on it.
+    left/right/top/bottom/z-index 
+    To make the child element positioned absolutely from its parent element we need to set a position apart from static on the parent element itself:
+    Now properties such as left, right, bottom and top will refer to the parent element, so that if we make the child element transparent we can see it sitting right at the bottom of the parent:
+4.fixed
+    fixed: the element is removed from the flow of the document like absolutely positioned elements. In fact they behave almost the same, only fixed positioned elements are always relative to the document, not any particular parent, and are unaffected by scrolling.
+
+5.sticky
+    sticky (experimental): the element is treated like a relative value until the scroll location of the viewport reaches a specified threshold, at which point the element takes a fixed position where it is told to stick.
+
+    The sticky value is like a compromise between the relative and fixed values. As of this writing, it is currently an experimental value, meaning it is not part of the official spec and only partially adopted by select browsers. In other words, it’s probably not the best idea to use this on a live production website.
+
+    What does it do? Well, it allows you to position an element relative to anything on the document and then, once a user has scrolled past a certain point in the viewport, fix the position of the element to that location so it remains persistently displayed like an element with a fixed value.
+
+
+
+
+
+*/
